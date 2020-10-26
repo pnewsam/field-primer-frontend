@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mockData from "./mockData.json";
-import { SpeciesCountResult } from "../SpeciesCountResult";
+import PlantCard from "../PlantCard";
+import Section from "../Section";
 import styles from "./styles.module.css";
 
 // const url =
@@ -13,7 +14,7 @@ import styles from "./styles.module.css";
 //   }
 // };
 
-export const INaturalistFetch = () => {
+export const PlantsSection = () => {
   const [data, setData] = useState(null);
 
   //   useEffect(() => {
@@ -29,12 +30,12 @@ export const INaturalistFetch = () => {
   const { results } = mockData;
 
   return (
-    <section className={styles.root}>
+    <Section className={styles.root}>
       {results.map((result) => (
-        <SpeciesCountResult key={result.taxon.id} data={result} />
+        <PlantCard key={result.taxon.id} data={result} />
       ))}
-    </section>
+    </Section>
   );
 };
 
-export default INaturalistFetch;
+export default PlantsSection;

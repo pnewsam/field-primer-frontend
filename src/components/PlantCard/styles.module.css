@@ -1,28 +1,33 @@
 .root {
   display: grid;
   grid-template-columns: 400px 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 }
 
 .img {
   background-position: center;
   background-size: cover;
+  border: solid 16px var(--color_black);
   height: 400px;
   overflow: hidden;
+  transform: translate(0, -10%);
   width: 400px;
 }
 
 .details {
-  padding: 0 20px;
+  padding: 40px;
 }
 
 .commonName {
-  border-bottom: solid 4px black;
-  font-size: 48px;
+  border-bottom: solid 8px var(--color_black);
+  display: inline-block;
+  font-size: 80px;
+  line-height: 64px;
   text-transform: capitalize;
+  vertical-align: baseline;
 }
 
 .species,
 .observationCount {
-  font-size: 32px;
+  font-size: 48px;
 }

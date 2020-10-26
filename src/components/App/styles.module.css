@@ -1,11 +1,11 @@
 .root {
   border: solid 1px black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
-.content {
-  max-width: 1080px;
-  width: calc(100% - 40px);
+.subHeading {
+  font-size: 48px;
+}
+
+.mainHeading {
+  font-size: 65px;
 }

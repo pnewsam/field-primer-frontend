@@ -1,14 +1,16 @@
 import React from "react";
-import INaturalistFetch from "../iNaturalistLambda";
+import PlantsSection from "../PlantsSection";
+import Section from "../Section";
 import styles from "./styles.module.css";
 
 const App = () => {
   return (
     <main className={styles.root}>
-      <div className={styles.content}>
-        <h1>Lambda Sandbox</h1>
-        <INaturalistFetch></INaturalistFetch>
-      </div>
+      <Section>
+        <h2 className={styles.subHeading}>Your Field Primer to:</h2>
+        <h1 className={styles.mainHeading}>Red Rock Conservation Area</h1>
+      </Section>
+      <PlantsSection></PlantsSection>
     </main>
   );
 };
