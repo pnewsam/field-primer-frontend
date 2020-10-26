@@ -1,0 +1,11 @@
+.root {
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 1080px;
+  width: calc(100% - 40px);
+}
